@@ -1304,6 +1304,49 @@ function InfectedHumEnts_Spawn()
 	}
 }
 
+function nav_connect( startAreaID, endAreaID, bidirectional=false )
+{
+	local startArea = NavMesh.GetNavAreaByID( startAreaID );
+	local endArea = NavMesh.GetNavAreaByID( endAreaID );
+
+	startArea.ConnectTo( endArea, -1 );
+	if( bidirectional )
+		endArea.ConnectTo( startArea, -1 );
+}
+
+function nav_disconnect( startAreaID, endAreaID, bidirectional=true )
+{
+	local startArea = NavMesh.GetNavAreaByID( startAreaID );
+	local endArea = NavMesh.GetNavAreaByID( endAreaID );
+
+	startArea.Disconnect( endArea );
+	if( bidirectional )
+		endArea.Disconnect( startArea );
+}
+
+BATTLESTATION <- 0x20
+
+function mark( areaIDs, attributes )
+{
+	local area
+
+	if( typeof(areaIDs) == "array" )
+	{
+		foreach( areaID in areaIDs )
+		{
+			area = NavMesh.GetNavAreaByID( areaID );
+			area.SetSpawnAttributes( attributes );
+		}
+	}
+	else
+	{
+		area = NavMesh.GetNavAreaByID( areaIDs );
+		local bits = area.GetSpawnAttributes();
+		area.SetSpawnAttributes( bits ^ attributes );
+		area.RemoveSpawnAttributes( bits & attributes );
+	}
+}
+
 /*****************************************************************************
 **  PATCH_NAV_OBSCURED
 **

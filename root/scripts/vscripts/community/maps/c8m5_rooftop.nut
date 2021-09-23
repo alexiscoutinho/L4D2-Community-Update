@@ -98,4 +98,7 @@ function DoMapSpawnFixes()
 	make_decal( "decals/debris_concrete001a",	"7283 8926 6088" );
 	make_decal( "decals/prodconcrete04",		"5942 9424 5983" );
 	make_decal( "decals/infstains",			"6188 7616 5967" );
+
+	nav_connect( 7697, 10826, true );
+	mark( [7697, 8516, 8593], BATTLESTATION );
 }
