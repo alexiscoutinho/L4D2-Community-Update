@@ -197,6 +197,7 @@ Note: Customization scripts [#13](https://github.com/Tsuey/L4D2-Community-Update
 #### Death's Door:
 
 - Enabled B&W state when under 25% health.
+- Fixed heartbeat sound when taking over bot.
 
 #### Tank Run:
 
