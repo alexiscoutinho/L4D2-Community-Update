@@ -1,10 +1,8 @@
 //-----------------------------------------------------
 Msg("Activating Mutation 5\n");
 
-DirectorOptions <-
+MutationOptions <-
 {
-	ActiveChallenge = 1
-
 	cm_CommonLimit = 0
 	cm_DominatorLimit = 8
 	cm_MaxSpecials = 8
@@ -107,7 +105,7 @@ function OnGameEvent_round_start_post_nav( params )
 	}
 
 	if ( Director.GetMapName() == "c5m5_bridge" || Director.GetMapName() == "c6m3_port" )
-		DirectorOptions.cm_MaxSpecials = 0;
+		SessionOptions.cm_MaxSpecials = 0;
 
 	EntFire( "weapon_spawn", "Kill" );
 	foreach( wep, val in DirectorOptions.weaponsToRemove )
@@ -117,13 +115,13 @@ function OnGameEvent_round_start_post_nav( params )
 function OnGameEvent_finale_start( params )
 {
 	if ( Director.GetMapName() == "c6m3_port" )
-		DirectorOptions.cm_MaxSpecials = 8;
+		SessionOptions.cm_MaxSpecials = 8;
 }
 
 function OnGameEvent_gauntlet_finale_start( params )
 {
 	if ( Director.GetMapName() == "c5m5_bridge" )
-		DirectorOptions.cm_MaxSpecials = 8;
+		SessionOptions.cm_MaxSpecials = 8;
 }
 
 function Update()

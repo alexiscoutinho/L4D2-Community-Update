@@ -1,10 +1,8 @@
 //-----------------------------------------------------
 Msg("Activating Mutation 7\n");
 
-DirectorOptions <-
+MutationOptions <-
 {
-	ActiveChallenge = 1
-
 	cm_InfiniteFuel = true
 	cm_ShouldHurry = true
 

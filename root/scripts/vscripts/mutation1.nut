@@ -1,10 +1,8 @@
 //-----------------------------------------------------
 Msg("Activating Mutation 1\n");
 
-DirectorOptions <-
+MutationOptions <-
 {
-	ActiveChallenge = 1
-
 	cm_NoSurvivorBots = true
 	cm_CommonLimit = 0
 	cm_DominatorLimit = 1
@@ -59,7 +57,7 @@ function OnGameEvent_round_start_post_nav( params )
 	}
 
 	if ( Director.GetMapName() == "c5m5_bridge" || Director.GetMapName() == "c6m3_port" )
-		DirectorOptions.cm_MaxSpecials = 0;
+		SessionOptions.cm_MaxSpecials = 0;
 
 	foreach( wep, val in DirectorOptions.weaponsToConvert )
 	{
@@ -82,13 +80,13 @@ function OnGameEvent_round_start_post_nav( params )
 function OnGameEvent_finale_start( params )
 {
 	if ( Director.GetMapName() == "c6m3_port" )
-		DirectorOptions.cm_MaxSpecials = 2;
+		SessionOptions.cm_MaxSpecials = 2;
 }
 
 function OnGameEvent_gauntlet_finale_start( params )
 {
 	if ( Director.GetMapName() == "c5m5_bridge" )
-		DirectorOptions.cm_MaxSpecials = 2;
+		SessionOptions.cm_MaxSpecials = 2;
 }
 
 function Update()

@@ -1,10 +1,8 @@
 //-----------------------------------------------------
 Msg("Activating Mutation 16\n");
 
-DirectorOptions <-
+MutationOptions <-
 {
-	ActiveChallenge = 1
-
 	cm_SpecialSlotCountdownTime = 15
 	cm_SpecialRespawnInterval = 1
 	cm_MaxSpecials = 4

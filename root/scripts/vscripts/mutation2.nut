@@ -1,9 +1,7 @@
 //-----------------------------------------------------
 Msg("Activating Mutation 2\n");
 
-DirectorOptions <-
+MutationOptions <-
 {
-	ActiveChallenge = 1
-
 	cm_HeadshotOnly = true
 }

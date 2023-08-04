@@ -1,10 +1,8 @@
 //-----------------------------------------------------
 Msg("Activating Mutation 15\n");
 
-DirectorOptions <-
+MutationOptions <-
 {
-	ActiveChallenge = 1
-
 	cm_ProhibitBosses = false
 	cm_CommonLimit = 25
 	cm_TankLimit = 1

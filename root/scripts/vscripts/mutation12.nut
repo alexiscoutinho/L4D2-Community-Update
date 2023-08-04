@@ -1,10 +1,8 @@
 //-----------------------------------------------------
 Msg("Activating Mutation 12\n");
 
-DirectorOptions <-
+MutationOptions <-
 {
-	ActiveChallenge = 1
-
 	cm_AllowPillConversion = false
 
 	ZombieGhostDelayMin = 15

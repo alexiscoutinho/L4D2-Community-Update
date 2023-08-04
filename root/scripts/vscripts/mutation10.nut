@@ -1,9 +1,7 @@
 //-----------------------------------------------------
 Msg("Activating Mutation 10\n");
 
-DirectorOptions <-
+MutationOptions <-
 {
-	ActiveChallenge = 1
-
 	cm_FirstManOut = true
 }

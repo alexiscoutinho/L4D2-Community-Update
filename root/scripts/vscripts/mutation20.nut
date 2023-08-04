@@ -1,10 +1,8 @@
 //-----------------------------------------------------
 Msg("Activating Mutation 20\n");
 
-DirectorOptions <-
+MutationOptions <-
 {
-	ActiveChallenge = 1
-
 	weaponsToRemove =
 	{
 		weapon_first_aid_kit = 0

@@ -1,8 +1,7 @@
 Msg("Activating Community Mutation 2\n");
 
-DirectorOptions <-
+MutationOptions <-
 {
-	ActiveChallenge = 1
 	RelaxMinInterval = 5
 	RelaxMaxInterval = 10
 	cm_SpecialRespawnInterval = 8

@@ -1,10 +1,8 @@
 //-----------------------------------------------------
 Msg("Activating Mutation 17\n");
 
-DirectorOptions <-
+MutationOptions <-
 {
-	ActiveChallenge = 1
-
 	cm_NoSurvivorBots = true
 
 	cm_CommonLimit = 10

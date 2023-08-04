@@ -1,10 +1,8 @@
 //-----------------------------------------------------
 Msg("Activating Mutation 8\n");
 
-DirectorOptions <-
+MutationOptions <-
 {
-	ActiveChallenge = 1
-
 	cm_AllowSurvivorRescue = false
 
 	weaponsToRemove =

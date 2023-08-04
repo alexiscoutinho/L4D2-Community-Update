@@ -13,10 +13,8 @@ if ( !IsModelPrecached( "models/infected/hunter_l4d1.mdl" ) )
 if ( !IsModelPrecached( "models/infected/hulk_l4d1.mdl" ) )
 	PrecacheModel( "models/infected/hulk_l4d1.mdl" );
 
-DirectorOptions <-
+MutationOptions <-
 {
-	ActiveChallenge = 1
-
 	SpitterLimit = 0
 	JockeyLimit = 0
 	ChargerLimit = 0
@@ -109,7 +107,7 @@ function OnGameEvent_round_start_post_nav( params )
 
 	if ( Director.IsL4D1Campaign() )
 	{
-		DirectorOptions.WaterSlowsMovement <- false;
+		SessionOptions.WaterSlowsMovement <- false;
 
 		if ( SessionState.ModeName == "l4d1coop" || SessionState.ModeName == "l4d1vs" )
 		{

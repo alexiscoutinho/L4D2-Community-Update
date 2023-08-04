@@ -1,10 +1,8 @@
 //-----------------------------------------------------
 Msg("Activating Mutation 13\n");
 
-DirectorOptions <-
+MutationOptions <-
 {
-	ActiveChallenge = 1
-
 	cm_SingleScavengeCluster = true
 
 	ScavengeScoreBonusTime = 30

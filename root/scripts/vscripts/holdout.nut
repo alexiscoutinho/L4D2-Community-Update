@@ -360,12 +360,12 @@ function HoldoutSlowPollUpdate()
 
 function JournalFunc()
 {
-	DirectorOptions.JournalString = "{ resources = " + g_MapScript.Resources.CurrentCount
+	SessionOptions.JournalString = "{ resources = " + g_MapScript.Resources.CurrentCount
 	if (SessionState.HUDRescueTimer)
-		DirectorOptions.JournalString += ", rescue = " + RescueTimer_Get()
+		SessionOptions.JournalString += ", rescue = " + RescueTimer_Get()
 	if ("JournalMapFunc" in this)
-		DirectorOptions.JournalString += JournalMapFunc()
-	DirectorOptions.JournalString += " }"
+		SessionOptions.JournalString += JournalMapFunc()
+	SessionOptions.JournalString += " }"
 }
 
 //=========================================================
@@ -434,7 +434,7 @@ function GetNextStage()
 	//  now the generalized stage sequencing...
 	if ( stageNum == 0 )
 	{
-		DirectorOptions.ScriptedStageType = STAGE_SETUP
+		SessionOptions.ScriptedStageType = STAGE_SETUP
 		if ("HUDTickerText" in SessionState)
 			Ticker_NewStr(SessionState.HUDTickerText)  // since the time it got set as start in HUD load is ages ago
 	}
@@ -455,8 +455,8 @@ function GetNextStage()
 		if (::g_ScriptClearout)
 		{
 			ClearoutStart( holdout_ClearoutTable )
-			DirectorOptions.ScriptedStageType = STAGE_DELAY
-			DirectorOptions.ScriptedStageValue = -1	// Infinite
+			SessionOptions.ScriptedStageType = STAGE_DELAY
+			SessionOptions.ScriptedStageValue = -1	// Infinite
 		}
 		else
 			use_stage = GetMapClearoutStage()
@@ -467,15 +467,15 @@ function GetNextStage()
 	}
 
 	// Put the special infected into assault mode - really want to do this sooner somehow? at maxspecials 0?
-	switch ( DirectorOptions.ScriptedStageType )
+	switch ( SessionOptions.ScriptedStageType )
 	{
 		case STAGE_CLEAROUT:
 		case STAGE_DELAY:
 		case STAGE_ESCAPE:
-			DirectorOptions.SpecialInfectedAssault = true
+			SessionOptions.SpecialInfectedAssault = true
 			break;
 		default:
-			DirectorOptions.SpecialInfectedAssault = false
+			SessionOptions.SpecialInfectedAssault = false
 	}
 
 	if ( use_stage != null )
@@ -491,5 +491,5 @@ function GetNextStage()
 			SessionState.NextDelayTime <- 30                     // better default from somewhere?
 	}
 
-	smDbgPrint( "Setting type " + DirectorOptions.ScriptedStageType + " and val " + DirectorOptions.ScriptedStageValue )
+	smDbgPrint( "Setting type " + SessionOptions.ScriptedStageType + " and val " + SessionOptions.ScriptedStageValue )
 }

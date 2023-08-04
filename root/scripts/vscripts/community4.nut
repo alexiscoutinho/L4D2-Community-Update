@@ -1,10 +1,8 @@
 //-----------------------------------------------------
 Msg("Activating Nightmare\n");
 
-DirectorOptions <-
+MutationOptions <-
 {
-	ActiveChallenge = 1
-
 	cm_DominatorLimit = 8
 	cm_MaxSpecials = 8
 	cm_SpecialRespawnInterval = 30

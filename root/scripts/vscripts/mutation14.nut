@@ -1,10 +1,8 @@
 //-----------------------------------------------------
 Msg("Activating Mutation 14\n");
 
-DirectorOptions <-
+MutationOptions <-
 {
-	ActiveChallenge = 1
-
 	weaponsToRemove =
 	{
 		weapon_pistol = 0

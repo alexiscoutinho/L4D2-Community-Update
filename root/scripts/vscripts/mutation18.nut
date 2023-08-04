@@ -1,10 +1,8 @@
 //-----------------------------------------------------
 Msg("Activating Mutation 18\n");
 
-DirectorOptions <-
+MutationOptions <-
 {
-	ActiveChallenge = 1
-
 	weaponsToConvert =
 	{
 		weapon_first_aid_kit = "weapon_pain_pills_spawn"

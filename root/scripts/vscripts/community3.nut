@@ -1,9 +1,7 @@
 Msg("Activating community mutation 3.\n");
 
-DirectorOptions <-
+MutationOptions <-
 {
-	ActiveChallenge = 1
-
 	cm_CommonLimit = 0
 
 	BoomerLimit = 0

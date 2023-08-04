@@ -1,10 +1,8 @@
 //-----------------------------------------------------
 Msg("Activating Mutation 19\n");
 
-DirectorOptions <-
+MutationOptions <-
 {
-	ActiveChallenge = 1
-
 //	cm_frustrationTimer = 0
 	cm_TankRun = true
 	cm_ShouldHurry = true

@@ -30,8 +30,6 @@ if ( !IsModelPrecached( "models/infected/charger.mdl" ) )
 
 MutationOptions <-
 {
-	ActiveChallenge = 1
-
 	cm_CommonLimit = 0
 	cm_DominatorLimit = 8
 	cm_MaxSpecials = 8
@@ -135,11 +133,11 @@ function OnGameEvent_round_start_post_nav( params )
 	}
 
 	if ( Director.GetMapName() == "c1m1_hotel" )
-		DirectorOptions.cm_TankLimit <- 0;
+		SessionOptions.cm_TankLimit <- 0;
 	else if ( Director.GetMapName() == "c5m5_bridge" || Director.GetMapName() == "c6m3_port" )
-		DirectorOptions.cm_MaxSpecials = 0;
+		SessionOptions.cm_MaxSpecials = 0;
 	else if ( Director.GetMapName() == "c7m1_docks" )
-		DirectorOptions.cm_ProhibitBosses = true;
+		SessionOptions.cm_ProhibitBosses = true;
 }
 
 function OnGameEvent_player_left_safe_area( params )
@@ -159,9 +157,9 @@ function OnGameEvent_triggered_car_alarm( params )
 {
 	if ( !Director.IsTankInPlay() )
 	{
-		DirectorOptions.cm_AggressiveSpecials = true;
+		SessionOptions.cm_AggressiveSpecials = true;
 		ZSpawn( { type = 8 } );
-		DirectorOptions.cm_AggressiveSpecials = false;
+		SessionOptions.cm_AggressiveSpecials = false;
 	}
 
 	StartAssault();
@@ -170,13 +168,13 @@ function OnGameEvent_triggered_car_alarm( params )
 function OnGameEvent_finale_start( params )
 {
 	if ( Director.GetMapName() == "c6m3_port" )
-		DirectorOptions.cm_MaxSpecials = 8;
+		SessionOptions.cm_MaxSpecials = 8;
 }
 
 function OnGameEvent_gauntlet_finale_start( params )
 {
 	if ( Director.GetMapName() == "c5m5_bridge" )
-		DirectorOptions.cm_MaxSpecials = 8;
+		SessionOptions.cm_MaxSpecials = 8;
 }
 
 function OnGameEvent_player_spawn( params )
