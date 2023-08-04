@@ -15,7 +15,7 @@
 // When survivors reach the final waypoint, we do a TANK wave, and they get a final time based on when they finish
 //
 // The waypoint itself has a fairly big script to detect nearby players, and track which ones have reached it
-//   as well as to trigger visual indications of progress, and "waypoint finished" calls back to this script
+// as well as to trigger visual indications of progress, and "waypoint finished" calls back to this script
 // And this script on startup has to sort the waypoints to make the in-order list
 
 // printl(" Loading Dash mode")
@@ -119,7 +119,7 @@ MutationState <-
 	JustHitWaypoint = false
 	YouWon = false
 	FirstWaypointHit = false
-	TimerWaypoint = 0   // for a soon to be written more flexible setup
+	TimerWaypoint = 0 // for a soon to be written more flexible setup
 	MobWaypoint = 0
 	CommonIncrement = 0
 }
@@ -152,7 +152,7 @@ function OnGameplayStart()
 
 	Scoring_LoadTable( SessionState.MapName, SessionState.ModeName )
 
-	//teleport players to the start point
+	// teleport players to the start point
 	if (!TeleportPlayersToStartPoints( "gamemode_playerstart" ) )
 		printl(" ** TeleportPlayersToStartPoints: Spawn point count or player count incorrect! Verify that there are 4 of each.")
 
@@ -285,7 +285,7 @@ function DashDisplayScores( )
 	if ("finish" in score_strings)
 		ticker_str = ticker_str + "\n" + score_strings.finish
 	ticker_str = ticker_str + "\nBest Times So Far"
-	Ticker_SetBlink( false )   // or true if you came in first? hmmm....
+	Ticker_SetBlink( false ) // or true if you came in first? hmmm....
 	Ticker_NewStr( ticker_str, 120 )
 	foreach (idx, val in score_strings.topscores)
 	{
@@ -314,10 +314,10 @@ function GetNextStage()
 	else if ( SessionState.JustHitWaypoint && SessionState.FinalWaypoint > 0 )
 	{
 		if ( !SessionState.FirstWaypointHit ) // could be start line, or waypoint 0
-		{  // hit firstone, kick things off
+		{ // hit firstone, kick things off
 			smDbgPrint("Hit First Waypoint!")
 			SessionState.FirstWaypointHit = true
-			HUDManageTimers( 1 , TIMER_COUNTUP, 0)   // generalize this?
+			HUDManageTimers( 1 , TIMER_COUNTUP, 0) // generalize this?
 
 			// calculate the number of common infected to add each time a waypoint is completed
 			SessionState.CommonIncrement = (100 - SessionOptions.CommonLimit) / SessionState.FinalWaypoint
@@ -347,7 +347,7 @@ function GetNextStage()
 			{
 				Ticker_NewStr("One gate to go!")
 				SessionOptions.TankLimit = 1 // how do i force a tank from script?
-				SessionOptions.ScriptedStageType = STAGE_ESCAPE  // i guess i do an escape stage
+				SessionOptions.ScriptedStageType = STAGE_ESCAPE // i guess i do an escape stage
 			}
 			else // display some help text on the ticker
 			{
@@ -380,7 +380,7 @@ function GetNextStage()
 // because call DWD is where we active/deactive the waypoints, we can just treat the start line as secret pre-waypoint
 function SurvivorLeftStartBox()
 {
-	SessionState.JustHitWaypoint = true   // and since the main loop never looks up into the array, that is o.k.
+	SessionState.JustHitWaypoint = true // and since the main loop never looks up into the array, that is o.k.
 	Director.ForceNextStage()
 }
 
@@ -401,7 +401,7 @@ function DashWaypointDone( id )
 	if ( next_id >= SessionState.FinalWaypoint )
 	{
 		// printl("Youz da Winner, yo!")
-		SessionState.CurrentWaypoint--   // for safety
+		SessionState.CurrentWaypoint-- // for safety
 		SessionState.YouWon = true
 
 		// stop the clock
@@ -424,7 +424,7 @@ function DashWaypointDone( id )
 function AddCriteria( criteriaTable )
 {
 	criteriaTable.PercentComplete <- SessionState.FinalWaypoint > 0 ? (SessionState.CurrentWaypoint*1.0)/SessionState.FinalWaypoint : 0
-//	printl("Dash AddCriteria added " + criteriaTable.PercentComplete)
+	//printl("Dash AddCriteria added " + criteriaTable.PercentComplete)
 }
 
 //-------------------------------------------------------

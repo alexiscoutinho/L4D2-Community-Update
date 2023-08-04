@@ -13,22 +13,24 @@ MutationOptions <-
 	function AllowFallenSurvivorItem( classname )
 	{
 		if ( classname == "weapon_first_aid_kit" )
+		{
 			return false;
-
+		}
 		return true;
 	}
 
 	weaponsToConvert =
 	{
-		weapon_first_aid_kit = "weapon_pain_pills_spawn"
-		weapon_adrenaline = "weapon_pain_pills_spawn"
+		weapon_first_aid_kit =	"weapon_pain_pills_spawn"
+		weapon_adrenaline =		"weapon_pain_pills_spawn"
 	}
 
 	function ConvertWeaponSpawn( classname )
 	{
 		if ( classname in weaponsToConvert )
+		{
 			return weaponsToConvert[classname];
-
+		}
 		return 0;
 	}
 
@@ -41,8 +43,9 @@ MutationOptions <-
 	function GetDefaultItem( idx )
 	{
 		if ( idx < DefaultItems.len() )
+		{
 			return DefaultItems[idx];
-
+		}
 		return 0;
 	}
 }

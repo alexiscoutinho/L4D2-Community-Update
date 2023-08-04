@@ -14,8 +14,8 @@ MutationOptions <-
 	// convert items that aren't useful
 	weaponsToConvert =
 	{
-		weapon_pipe_bomb =	"weapon_molotov_spawn"
-		weapon_vomitjar =	"weapon_molotov_spawn"
+		weapon_pipe_bomb =		"weapon_molotov_spawn"
+		weapon_vomitjar =		"weapon_molotov_spawn"
 		weapon_defibrillator =	"weapon_first_aid_kit_spawn"
 	}
 

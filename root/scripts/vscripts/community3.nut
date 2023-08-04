@@ -14,7 +14,7 @@ MutationOptions <-
 
 	cm_SpecialRespawnInterval = 20
 
-	function ConvertZombieClass(id)
+	function ConvertZombieClass( id )
 	{
 		return 5;
 	}

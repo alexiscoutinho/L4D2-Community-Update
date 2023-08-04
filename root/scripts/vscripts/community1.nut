@@ -55,7 +55,7 @@ MutationOptions <-
 	// convert items that aren't useful
 	weaponsToConvert =
 	{
-		weapon_pipe_bomb =	"weapon_molotov_spawn"
+		weapon_pipe_bomb = "weapon_molotov_spawn"
 	}
 
 	function ConvertWeaponSpawn( classname )

@@ -16,7 +16,7 @@ MutationOptions <-
 	ChargerLimit = 0
 	JockeyLimit = 0
 
-	ProhibitBosses = true //tanks still spawn at finales though
+	ProhibitBosses = true // tanks still spawn at finales though
 	MegaMobSize = 0
 
 	// convert items that aren't useful

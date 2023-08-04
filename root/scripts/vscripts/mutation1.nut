@@ -21,15 +21,14 @@ MutationOptions <-
 	// convert items that aren't useful
 	weaponsToConvert =
 	{
-		weapon_pipe_bomb =	"weapon_molotov_spawn"
-		weapon_vomitjar =	"weapon_molotov_spawn"
+		weapon_pipe_bomb =		"weapon_molotov_spawn"
+		weapon_vomitjar =		"weapon_molotov_spawn"
 		weapon_defibrillator =	"weapon_first_aid_kit_spawn"
-
-		weapon_smg =		"weapon_rifle_spawn"
+		weapon_smg =			"weapon_rifle_spawn"
 		weapon_pumpshotgun =	"weapon_autoshotgun_spawn"
 		weapon_smg_silenced =	"weapon_rifle_desert_spawn"
 		weapon_shotgun_chrome =	"weapon_shotgun_spas_spawn"
-		weapon_smg_mp5 =	"weapon_rifle_sg552_spawn"
+		weapon_smg_mp5 =		"weapon_rifle_sg552_spawn"
 	}
 
 	function ConvertWeaponSpawn( classname )
