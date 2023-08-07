@@ -26,17 +26,15 @@ DirectorOptions <-
 	cm_AllowPillConversion = false
 	cm_HealingGnome = true
 
-	TempHealthDecayRate = 0.001
-	function RecalculateHealthDecay()
-	{
-		if ( Director.HasAnySurvivorLeftSafeArea() )
-		{
-			TempHealthDecayRate = 0.27 // pain_pills_decay_rate default
-		}
-	}
+	TempHealthDecayRate = 0.0
 }
 
-function Update()
+function OnGameEvent_round_start( params )
 {
-	DirectorOptions.RecalculateHealthDecay();
+	Convars.SetValue( "pain_pills_decay_rate", 0.0 );
+}
+
+function OnGameEvent_player_left_safe_area( params )
+{
+	DirectorOptions.TempHealthDecayRate = 0.27; // pain_pills_decay_rate default
 }
