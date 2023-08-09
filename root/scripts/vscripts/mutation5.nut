@@ -13,6 +13,13 @@ DirectorOptions <-
 	SpecialInitialSpawnDelayMin = 5
 	SpecialInitialSpawnDelayMax = 30
 
+	SmokerLimit = 2
+	BoomerLimit = 2
+	HunterLimit = 2
+	SpitterLimit = 2
+	JockeyLimit = 2
+	ChargerLimit = 2
+
 	// convert items that aren't useful
 	weaponsToConvert =
 	{
