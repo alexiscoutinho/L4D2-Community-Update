@@ -9,5 +9,5 @@ DirectorOptions <-
 	cm_MaxSpecials = 8
 	cm_BaseSpecialLimit = 2
 
-	DominatorLimit = 8
+	DominatorLimit = 4
 }

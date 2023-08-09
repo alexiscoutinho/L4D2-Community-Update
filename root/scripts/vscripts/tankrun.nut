@@ -14,7 +14,7 @@ MutationOptions <-
 	cm_InfiniteFuel = true
 	cm_AllowPillConversion = false
 	cm_CommonLimit = 0
-	cm_DominatorLimit = 0
+	DominatorLimit = -1
 	cm_MaxSpecials = 0
 	cm_ProhibitBosses = true
 	cm_AggressiveSpecials = true

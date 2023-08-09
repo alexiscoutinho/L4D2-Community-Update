@@ -16,5 +16,5 @@ DirectorOptions <-
 	ChargerLimit = 0
 	JockeyLimit = 0
 
-	DominatorLimit = 4
+//	DominatorLimit = 4
 }

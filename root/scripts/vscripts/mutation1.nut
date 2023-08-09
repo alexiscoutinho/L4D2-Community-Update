@@ -7,7 +7,7 @@ DirectorOptions <-
 
 	cm_NoSurvivorBots = true
 	cm_CommonLimit = 0
-	cm_DominatorLimit = 1
+	DominatorLimit = 0
 	cm_MaxSpecials = 2
 	cm_SpecialRespawnInterval = 60
 	cm_AutoReviveFromSpecialIncap = true

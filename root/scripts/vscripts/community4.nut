@@ -5,7 +5,7 @@ DirectorOptions <-
 {
 	ActiveChallenge = 1
 
-	cm_DominatorLimit = 8
+	DominatorLimit = 4
 	cm_MaxSpecials = 8
 	cm_SpecialRespawnInterval = 30
 	cm_AutoReviveFromSpecialIncap = true
