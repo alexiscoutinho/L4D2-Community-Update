@@ -16,5 +16,5 @@ DirectorOptions <-
 	ChargerLimit = 0
 	JockeyLimit = 0
 
-//	DominatorLimit = 4
+//	DominatorLimit = 4 // because of https://github.com/Tsuey/L4D2-Community-Update/issues/401
 }

@@ -5,7 +5,7 @@ DirectorOptions <-
 {
 	ActiveChallenge = 1
 
-	DominatorLimit = 4
+	DominatorLimit = 4 // because of https://github.com/Tsuey/L4D2-Community-Update/issues/311 and 401, respectively
 	cm_MaxSpecials = 8
 	cm_SpecialRespawnInterval = 30
 	cm_AutoReviveFromSpecialIncap = true

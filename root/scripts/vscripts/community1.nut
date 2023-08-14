@@ -33,7 +33,7 @@ MutationOptions <-
 	ActiveChallenge = 1
 
 	cm_CommonLimit = 0
-	DominatorLimit = 4
+	DominatorLimit = 4 // because of https://github.com/Tsuey/L4D2-Community-Update/issues/311 and 401, respectively
 	cm_MaxSpecials = 8
 	cm_ProhibitBosses = false
 	cm_SpecialRespawnInterval = 0

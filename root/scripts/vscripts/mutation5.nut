@@ -6,13 +6,14 @@ DirectorOptions <-
 	ActiveChallenge = 1
 
 	cm_CommonLimit = 0
-	DominatorLimit = 4
+	DominatorLimit = 4 // because of https://github.com/Tsuey/L4D2-Community-Update/issues/311 and 401, respectively
 	cm_MaxSpecials = 8
 	cm_SpecialRespawnInterval = 15
 
 	SpecialInitialSpawnDelayMin = 5
 	SpecialInitialSpawnDelayMax = 30
 
+	// because of https://github.com/Tsuey/L4D2-Community-Update/issues/317
 	SmokerLimit = 2
 	BoomerLimit = 2
 	HunterLimit = 2

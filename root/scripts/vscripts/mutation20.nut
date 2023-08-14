@@ -29,7 +29,7 @@ DirectorOptions <-
 	TempHealthDecayRate = 0.0
 }
 
-function OnGameEvent_round_start( params )
+function OnGameEvent_round_start( params ) // because of https://github.com/Tsuey/L4D2-Community-Update/issues/181
 {
 	Convars.SetValue( "pain_pills_decay_rate", 0.0 );
 }

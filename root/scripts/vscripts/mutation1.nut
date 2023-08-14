@@ -7,7 +7,7 @@ DirectorOptions <-
 
 	cm_NoSurvivorBots = true
 	cm_CommonLimit = 0
-	DominatorLimit = 0
+	DominatorLimit = 0 // because of https://github.com/Tsuey/L4D2-Community-Update/issues/311 and 401, respectively
 	cm_MaxSpecials = 2
 	cm_SpecialRespawnInterval = 60
 	cm_AutoReviveFromSpecialIncap = true

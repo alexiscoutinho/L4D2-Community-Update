@@ -7,7 +7,7 @@ DirectorOptions <-
 
 	cm_SpecialRespawnInterval = 15
 	cm_MaxSpecials = 8
-//	cm_BaseSpecialLimit = 2
+//	cm_BaseSpecialLimit = 2 // because of https://github.com/Tsuey/L4D2-Community-Update/issues/317
 
 	SmokerLimit = 2
 	BoomerLimit = 2
@@ -16,5 +16,5 @@ DirectorOptions <-
 	JockeyLimit = 2
 	ChargerLimit = 2
 
-	DominatorLimit = 4
+	DominatorLimit = 4 // because of https://github.com/Tsuey/L4D2-Community-Update/issues/401
 }

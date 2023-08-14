@@ -10,7 +10,7 @@ MutationOptions <-
 	SurvivorMaxIncapacitatedCount = 0
 	TempHealthDecayRate = 0.0
 
-	function AllowFallenSurvivorItem( classname )
+	function AllowFallenSurvivorItem( classname ) // because of https://github.com/Tsuey/L4D2-Community-Update/issues/259
 	{
 		if ( classname == "weapon_first_aid_kit" )
 			return false;
@@ -49,7 +49,7 @@ MutationOptions <-
 
 function OnGameEvent_round_start( params )
 {
-	Convars.SetValue( "pain_pills_decay_rate", 0.0 );
+	Convars.SetValue( "pain_pills_decay_rate", 0.0 ); // because of https://github.com/Tsuey/L4D2-Community-Update/issues/181
 
 	for ( local player; player = Entities.FindByClassname( player, "player" ); ) // only works in restarts, which is desired
 	{
@@ -215,7 +215,7 @@ function OnGameEvent_bot_player_replace( params )
 	local player = GetPlayerFromUserID( params["player"] );
 	if ( !player )
 		return;
-
+	// because of https://github.com/Tsuey/L4D2-Community-Update/issues/343
 	if ( !player.IsDead() ) // in case jointeam 2 or sb_takecontrol was used on a dead bot
 	{
 		if ( player.GetHealth() < player.GetMaxHealth() / 4 )

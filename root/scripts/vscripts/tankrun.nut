@@ -14,7 +14,7 @@ MutationOptions <-
 	cm_InfiniteFuel = true
 	cm_AllowPillConversion = false
 	cm_CommonLimit = 0
-	DominatorLimit = -1
+	DominatorLimit = -1 // because of https://github.com/Tsuey/L4D2-Community-Update/issues/311 and 401, respectively
 	cm_MaxSpecials = 0
 	cm_ProhibitBosses = true
 	cm_AggressiveSpecials = true
