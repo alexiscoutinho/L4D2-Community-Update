@@ -1,5 +1,5 @@
 //-----------------------------------------------------
-Msg("Activating Mutation 15\n");
+Msg("Activating Versus Survival\n");
 
 MutationOptions <-
 {

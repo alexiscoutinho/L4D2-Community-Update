@@ -1,5 +1,5 @@
 //-----------------------------------------------------
-Msg("Activating Mutation 20\n");
+Msg("Activating Healing Gnome\n");
 
 MutationOptions <-
 {

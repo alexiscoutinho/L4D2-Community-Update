@@ -1,5 +1,5 @@
 //-----------------------------------------------------
-Msg("Activating Mutation 2\n");
+Msg("Activating Headshot!\n");
 
 MutationOptions <-
 {

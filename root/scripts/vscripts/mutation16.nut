@@ -1,5 +1,5 @@
 //-----------------------------------------------------
-Msg("Activating Mutation 16\n");
+Msg("Activating Hunting Party\n");
 
 MutationOptions <-
 {

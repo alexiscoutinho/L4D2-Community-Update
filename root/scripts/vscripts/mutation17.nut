@@ -1,5 +1,5 @@
 //-----------------------------------------------------
-Msg("Activating Mutation 17\n");
+Msg("Activating Lone Gunman\n");
 
 MutationOptions <-
 {

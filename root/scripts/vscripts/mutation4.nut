@@ -1,5 +1,5 @@
 //-----------------------------------------------------
-Msg("Activating Mutation 4\n");
+Msg("Activating Hard Eight\n");
 
 MutationOptions <-
 {

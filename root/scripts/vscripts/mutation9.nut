@@ -1,5 +1,5 @@
 //-----------------------------------------------------
-Msg("Activating Mutation 9\n");
+Msg("Activating Last Gnome On Earth\n");
 
 MutationOptions <-
 {

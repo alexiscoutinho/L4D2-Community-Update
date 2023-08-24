@@ -1,4 +1,4 @@
-Msg("Activating community mutation 3.\n");
+Msg("Activating Riding My Survivor\n");
 
 MutationOptions <-
 {

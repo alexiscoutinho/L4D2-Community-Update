@@ -1,5 +1,5 @@
 //-----------------------------------------------------
-Msg("Activating Mutation 1\n");
+Msg("Activating Last Man on Earth\n");
 
 MutationOptions <-
 {

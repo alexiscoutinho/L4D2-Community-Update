@@ -1,5 +1,5 @@
 //-----------------------------------------------------
-Msg("Activating Mutation 7\n");
+Msg("Activating Chainsaw Massacre\n");
 
 MutationOptions <-
 {

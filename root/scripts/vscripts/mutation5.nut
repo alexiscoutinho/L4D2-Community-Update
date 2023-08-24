@@ -1,5 +1,5 @@
 //-----------------------------------------------------
-Msg("Activating Mutation 5\n");
+Msg("Activating Four Swordsmen\n");
 
 MutationOptions <-
 {

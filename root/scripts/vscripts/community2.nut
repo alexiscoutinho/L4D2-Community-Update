@@ -1,4 +1,4 @@
-Msg("Activating Community Mutation 2\n");
+Msg("Activating Flu Season\n");
 
 MutationOptions <-
 {

@@ -1,5 +1,5 @@
 //-----------------------------------------------------
-Msg("Activating Mutation 13\n");
+Msg("Activating Follow the Liter\n");
 
 MutationOptions <-
 {
